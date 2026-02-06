@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 10%;
+    flex-wrap: wrap;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+}
+
+.hero-content p {
+    margin: 15px 0;
+    opacity: 0.9;
+}
+
+.cta {
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: none;
+    background: white;
+    color: #6a11cb;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.cta:hover {
+    transform: scale(1.05);
+}
+
+.image-placeholder {
+    font-size: 5rem;
+}
+
+/* SECTIONS */
+section {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+/* CARDS */
+.steps, .feature-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 25px;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* FORM */
+.form-card {
+    max-width: 400px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 30px;
+    border-radius: 16px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 12px;
+    border-radius: 10px;
+    border: none;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+button {
+    background: white;
+    color: #2575fc;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* RESULT */
+.result-card {
+    background: rgba(255,255,255,0.15);
+    padding: 30px;
+    border-radius: 16px;
+    max-width: 600px;
+    margin: auto;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.timeline {
+    margin-top: 15px;
+}
+
+.timeline span {
+    display: block;
+    margin: 8px 0;
+}
+
+/* FOOTER */
+footer {
+    padding: 30px;
+    background: rgba(0,0,0,0.2);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

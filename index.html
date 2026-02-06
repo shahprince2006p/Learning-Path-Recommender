@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Path Recommender</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 🟣 HERO SECTION -->
+<section class="hero" id="hero">
+    <div class="hero-content">
+        <h1>Find Your Perfect Learning Path 🚀</h1>
+        <p>Tell us your interests and we will recommend what to learn next.</p>
+        <button class="cta" onclick="scrollToSection('form')">Get Started</button>
+    </div>
+    <div class="hero-image">
+        <div class="image-placeholder">🎓📘</div>
+    </div>
+</section>
+
+<!-- 🟣 HOW IT WORKS -->
+<section class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps">
+        <div class="card">
+            <span>1️⃣</span>
+            <h3>Choose Interest</h3>
+            <p>Select the field you want to grow in.</p>
+        </div>
+        <div class="card">
+            <span>2️⃣</span>
+            <h3>Select Level</h3>
+            <p>Tell us your current skill level.</p>
+        </div>
+        <div class="card">
+            <span>3️⃣</span>
+            <h3>Get Roadmap</h3>
+            <p>Receive a personalized learning path.</p>
+        </div>
+    </div>
+</section>
+
+<!-- 🟣 USER INPUT FORM -->
+<section class="form-section" id="form">
+    <div class="form-card">
+        <h2>Generate Your Learning Path</h2>
+
+        <form id="learningForm">
+            <input type="text" id="name" placeholder="Your Name">
+
+            <select id="interest">
+                <option value="">Select Interest</option>
+                <option value="web">Web Development</option>
+                <option value="app">App Development</option>
+                <option value="data">Data Science</option>
+                <option value="ai">AI / Machine Learning</option>
+                <option value="cyber">Cyber Security</option>
+            </select>
+
+            <div class="radio-group">
+                <label><input type="radio" name="level" value="beginner"> Beginner</label>
+                <label><input type="radio" name="level" value="intermediate"> Intermediate</label>
+                <label><input type="radio" name="level" value="advanced"> Advanced</label>
+            </div>
+
+            <label class="slider-label">
+                Weekly Study Time: <span id="hours">10</span> hrs
+            </label>
+            <input type="range" min="1" max="20" value="10" id="studyTime">
+
+            <button type="submit">Generate My Learning Path</button>
+        </form>
+    </div>
+</section>
+
+<!-- 🟣 RESULT SECTION -->
+<section class="result-section" id="result">
+    <div id="resultCard"></div>
+</section>
+
+<!-- 🟣 FEATURES -->
+<section class="features">
+    <h2>Why Use This?</h2>
+    <div class="feature-cards">
+        <div class="card">🎯 Personalized Roadmaps</div>
+        <div class="card">🌱 Beginner Friendly</div>
+        <div class="card">📚 Free Resources</div>
+    </div>
+</section>
+
+<!-- 🟣 FOOTER -->
+<footer>
+    <p><strong>Learning Path Recommender</strong></p>
+    <p>Made for students ❤️</p>
+    <div class="socials">
+        🔗 🔗 🔗
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
