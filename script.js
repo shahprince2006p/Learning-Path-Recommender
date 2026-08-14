@@ -19,6 +19,7 @@ form.addEventListener("submit", function(e) {
     }
 
     let path = "";
+    // it is for the path
 
     if (interest === "web" && level.value === "beginner")
         path = "HTML → CSS → JavaScript → Git → React → Projects";
