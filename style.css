@@ -42,7 +42,7 @@ body {
 .cta:hover {
     transform: scale(1.05);
 }
-
+/* this is for the logo */
 .image-placeholder {
     font-size: 5rem;
 }
