@@ -17,7 +17,7 @@ form.addEventListener("submit", function(e) {
         alert("Please fill all fields");
         return;
     }
-
+// if all field in notfield
     let path = "";
 // it is for tha path
 
