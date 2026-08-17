@@ -35,7 +35,7 @@ form.addEventListener("submit", function(e) {
 
     if (interest === "app")
         path = "Programming → UI Design → Flutter / React Native → APIs";
-
+// result card
     resultCard.innerHTML = `
         <div class="result-card">
             <h3>🚀 ${name}'s Learning Roadmap</h3>
