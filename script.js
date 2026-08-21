@@ -44,7 +44,7 @@ form.addEventListener("submit", function(e) {
             </div>
         </div>
     `;
-
+// scril section keliye
     scrollToSection("result");
 });
 
