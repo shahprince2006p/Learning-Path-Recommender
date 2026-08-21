@@ -2,6 +2,7 @@ const form = document.getElementById("learningForm");
 const resultCard = document.getElementById("resultCard");
 const studyTime = document.getElementById("studyTime");
 const hours = document.getElementById("hours");
+// asking for time for study
 
 hours.innerText = studyTime.value;
 studyTime.oninput = () => hours.innerText = studyTime.value;
