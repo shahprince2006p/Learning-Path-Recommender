@@ -20,7 +20,7 @@ form.addEventListener("submit", function(e) {
 // if all field in notfield
     let path = "";
 // it is for tha path
-
+// this all fir the interest
     if (interest === "web" && level.value === "beginner")
         path = "HTML → CSS → JavaScript → Git → React → Projects";
 
